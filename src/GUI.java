@@ -9,17 +9,16 @@ public class GUI extends JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
-        addComponents();
-    }
-    private static void addComponents(){
+        
         JPanel panel = new JPanel();
         panel.setSize(800, 800);
-        panel.setBackground(Color.lightGray);
+        panel.setBackground(Color.darkGray);
         panel.setLayout(null);
 
 
-        
-        GUI h = new GUI();
-        h.add(panel);
+
+       add(panel);
+    
     }
+   
 }
