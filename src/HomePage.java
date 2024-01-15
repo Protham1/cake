@@ -3,7 +3,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -38,12 +38,13 @@ public class HomePage extends JFrame{
 
             
             public void actionPerformed(ActionEvent e) {
-                GUI g = new GUI();
+                MorseCodeTranslatorGUI g = new MorseCodeTranslatorGUI();
                 g.setVisible(true);
                 setVisible(false);
             }
             
         });
+
 
         JLabel label = new JLabel("Secret Code Translator");
         label.setBounds(50, 10, 400, 80);
