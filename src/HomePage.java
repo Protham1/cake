@@ -45,6 +45,24 @@ public class HomePage extends JFrame{
             
         });
 
+        number = new JButton();
+        number.setBounds(250, 200, 150, 100);
+        number.setHorizontalAlignment(JButton.CENTER);
+        number.setText("Number Code");
+        number.setFont(new Font("Dialog", Font.BOLD, 18));
+        number.setBorder(new LineBorder(Color.black, 3));
+        number.setBackground(Color.white);
+        number.addActionListener(new ActionListener() {
+
+            
+            public void actionPerformed(ActionEvent e) {
+                NumberCodeGUI n = new NumberCodeGUI();
+                n.setVisible(true);
+                setVisible(false);
+            }
+            
+        });
+
 
         JLabel label = new JLabel("Secret Code Translator");
         label.setBounds(50, 10, 400, 80);
@@ -56,6 +74,7 @@ public class HomePage extends JFrame{
 
         panel.add(morse);
         panel.add(label);
+        panel.add(number);
 
         add(panel);
     }
