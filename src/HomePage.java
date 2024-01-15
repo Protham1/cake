@@ -70,10 +70,18 @@ public class HomePage extends JFrame{
         label.setForeground(Color.white);
         label.setFont(new Font("Dialog", Font.BOLD, 24));
 
+        JLabel label2 = new JLabel("Java EL");
+        label2.setBounds(50, 80, 400, 80);
+        label2.setHorizontalAlignment(JLabel.CENTER);
+        label2.setForeground(Color.white);
+        label2.setFont(new Font("Dialog", Font.BOLD, 24));
+
+
 
 
         panel.add(morse);
         panel.add(label);
+        panel.add(label2);
         panel.add(number);
 
         add(panel);
