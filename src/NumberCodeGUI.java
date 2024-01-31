@@ -1,15 +1,19 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
+
 
 public class NumberCodeGUI extends JFrame implements KeyListener{
       private NumberCode numberCode;
@@ -101,6 +105,21 @@ public class NumberCodeGUI extends JFrame implements KeyListener{
         JScrollPane morseCodeScroll = new JScrollPane(morseCodeArea);
         morseCodeScroll.setBounds(20, 430, 484, 236);
 
+         JButton backb = new JButton();
+        backb.setText("Back");
+        backb.setBounds(230, 670,80,50  );
+        backb.setBackground(Color.white);
+        backb.setForeground(Color.black);
+        backb.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HomePage g = new HomePage();
+                g.setVisible(true);
+                setVisible(false);
+            }
+            
+        
+        });
+
     
 
         
@@ -109,6 +128,7 @@ public class NumberCodeGUI extends JFrame implements KeyListener{
         add(textInputScroll);
         add(morseCodeInputLabel);
         add(morseCodeScroll);
+        add(backb);
         
     }
 

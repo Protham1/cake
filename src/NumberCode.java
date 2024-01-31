@@ -60,7 +60,8 @@ public class NumberCode {
         morseCodeMap.put('w', "23");
         morseCodeMap.put('x', "24");
         morseCodeMap.put('y', "25");
-        morseCodeMap.put('z', "26");}
+        morseCodeMap.put('z', "26");
+        morseCodeMap.put(' ', "0");}
 
        
 

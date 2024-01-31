@@ -8,9 +8,12 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
 public class HomePage extends JFrame{
+    int radius = 32;
+    int padding = radius / 2;
     HomePage(){
         setSize(500, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -30,10 +33,11 @@ public class HomePage extends JFrame{
         morse = new JButton();
         morse.setBounds(50, 200, 150, 100);
         morse.setHorizontalAlignment(JButton.CENTER);
-        morse.setText("Morse Code");
+        morse.setText(" Morse Code ");
         morse.setFont(new Font("Dialog", Font.BOLD, 18));
         morse.setBorder(new LineBorder(Color.black, 3));
         morse.setBackground(Color.white);
+        morse.setForeground(Color.black);
         morse.addActionListener(new ActionListener() {
 
             

@@ -3,12 +3,7 @@ import java.util.HashMap;
 
 
 public class MorseCodeController {
-    // we'll use a hashmap to translate user input into morse code
-    // a hashmap is a data structure that stores key/value pairs
-    // in this case, we'll use the letter as the key and the corresponding morse code as the value
-    // this way, we can easily look up the morse code for any given letter by using the letter as the key
 
-    // here I am declaring a hashmap to have a key of type "Character" with a value of type "String"
     private HashMap<Character, String> morseCodeMap;
 
     public MorseCodeController(){
