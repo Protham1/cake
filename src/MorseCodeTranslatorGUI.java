@@ -1,14 +1,12 @@
 
-import javax.imageio.ImageIO;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+
 
 
 public class MorseCodeTranslatorGUI extends JFrame implements KeyListener {
@@ -150,17 +148,6 @@ public class MorseCodeTranslatorGUI extends JFrame implements KeyListener {
             
             morseCodeArea.setText(morseCodeController.translateToMorse(inputText));
         }
-    }
-    private ImageIcon getIcon(String Filename){
-        BufferedImage img;
-        try {
-            img = ImageIO.read(new File(Filename));
-            return new ImageIcon(img);
-        } catch (IOException e) {
-            
-            e.printStackTrace();
-        }return null;
-        
     }
    
 }
